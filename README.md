@@ -1,4 +1,4 @@
-# DG Burguer - Virtual Burger E-commerce
+# DG Burguer - Virtual Burger E-commerce v1.0.0
 
 ## 📌 About the Project
 **DG Burguer** is an e-commerce platform for a virtual burger shop, allowing users to browse the menu, select their favorite burgers, and place orders easily.
