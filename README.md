@@ -1,4 +1,4 @@
-# DG Burguer - E-commerce de Hamburgueria Virtual v1.0.0
+# DG Burguer - E-commerce de Hamburgueria Virtual v1.0.1
 
 ## 📌 Sobre o Projeto
 O **DG Burguer** é um e-commerce para uma hamburgueria virtual que permite aos usuários navegarem pelo cardápio, escolherem seus hambúrgueres favoritos e finalizarem seus pedidos de forma simples e intuitiva.
@@ -30,7 +30,7 @@ Este projeto está sob a licença MIT.
 
 ---
 
-# DG Burguer - Virtual Burger E-commerce v1.0.0
+# DG Burguer - Virtual Burger E-commerce v1.0.1
 
 ## 📌 About the Project
 **DG Burguer** is an e-commerce platform for a virtual burger shop, allowing users to browse the menu, select their favorite burgers, and place orders easily.
