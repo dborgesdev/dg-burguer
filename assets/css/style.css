@@ -157,8 +157,7 @@ h3 {
     height: 30px;
 }
 
-.cart__item__qtyless,
-.cart__item__qtyplus {
+.cart__item__qty-button {
     border: 0;
     background-color: transparent;
     font-size: 17px;
@@ -328,7 +327,8 @@ main {
     background-color: #1f1f1f;
     border-radius: 20px;
     box-shadow: 0 0 15px rgba(151, 151, 151, 0.6) ;
-    transition: all ease .5s;
+    opacity: 0;
+    transition: all ease 0.8s;
     overflow-x: hidden;
     z-index: 99;
 }
@@ -336,7 +336,9 @@ main {
 .cart--show {
     width: 100%;
     max-width: 400px;
-    transition: all ease .5s;
+    left: auto;
+    opacity: 1;
+    transition: all ease 0.8s;
 }
 
 .cart__area {
@@ -519,8 +521,7 @@ main {
     height: 30px;
 }
 
-.item__popup__qtyless,
-.item__popup__qtyplus {
+.item__popup__qty-button {
     border: 0;
     background-color: transparent;
     font-size: 17px;

@@ -7,43 +7,25 @@
     <title>DG - Burguer</title>
 </head>
 <body>
-    <div class="product">
-        <div class="product__item">
-            <div class="product__item__photo">
-                <img class="product__item__photo__img" src="" alt="" />
-            </div>
-            <div class="product__item__info">
-                <div class="product__item__name">--</div>
-                <div class="product__item__price">R$ --</div>
-            </div>
-            <div class="product__item__add">+</div>
-        </div>
-        <div class="cart__item">
-            <img class="cart__item__img" src="" alt="" />
-            <div class="cart__item__name">--</div>
-            <div class="cart__item__qtydiv">
-                <button class="cart__item__qtyless">-</button>
-                <div class="cart__item__qty">1</div>
-                <button class="cart__item__qtyplus">+</button>
-            </div>
-        </div>
-    </div>
-    <div class="body__leftside">
+    <div id="body-left" class="body__leftside">
         <header>
             <div id="home" class="container">
                 <div class="logo">
                     <a href="">DG <span>&#8226</span> Burguer</a>
                 </div>
+                
                 <nav>
                     <ul class="nav__leftside">
                         <li><a class="nav__link" href="">Inicio</a></li>
                         <li><a class="nav__link" href="#order">Faça seu pedido</a></li>
                         <li><a class="nav__link" href="#contact">Contato</a></li>
                     </ul>
+                    
                     <div class="nav__rightside">
-                        <div class="nav__cart"><span class="nav__cart__counter">0</span>🛒</div>
+                        <div id="nav-cart-button" class="nav__cart"><span id="nav-cart-counter" class="nav__cart__counter">0</span>🛒</div>
                     </div>
                 </nav>
+                
                 <div class="header__mobilemenu">
                     <div class="header__mobilemenu__line"></div>
                     <div class="header__mobilemenu__line"></div>
@@ -51,99 +33,84 @@
                 </div>
             </div>
         </header>
+
         <section class="hero">
             <div class="container">
                 <div class="hero__leftside">
                     <h1>O Hamburguer<br />mais delicioso.😋</h1>
                     <p class="hero__leftside__text">A primeira hamburgueria virtual que você faz o pedido online e come o burguer através do computador.</p>
                 </div>
+                
                 <div class="hero__rightside">
                     <img class="hero__rightside__img" src="./assets/images/heroBurger.png" alt="Hamburguer Delicioso" />
                 </div>
             </div>
         </section>
+
         <section class="category">
             <div class="container" id="order">
                 <div class="category__title">
                     <h2>Escolha o seu<br />Hamburguer favorito!</h2>
                 </div>
+                
                 <div class="category__box">
-                    <select class="category__box__select">
-                        <option value="" hidden>Selecionar...</option>
-                        <option value="burguer">Hamburgueres</option>
-                        <option value="appetizer">Porções</option>
-                        <option value="drink">Bebidas</option>
-                        <option value="dessert">Sobremesas</option>
+                    <select id="category-selector" class="category__box__select">
+                        <option value="all">Mostrar Todos</option>
+                        <option value="burguer">&nbspHamburgueres</option>
+                        <option value="appetizer">&nbspPorções</option>
+                        <option value="drink">&nbspBebidas</option>
+                        <option value="dessert">&nbspSobremesas</option>
                     </select>
                 </div>        
             </div>
         </section>
+        
         <main>
             <div id="products" class="container">
-                <div class="productsgrid"></div>
+                <div id="products-grid" class="productsgrid"></div>
             </div>
         </main>
+        
         <footer>
             <div id="contact" class="container">
                 <div class="logo">
                     <a href="">DG <span>&#8226</span> Burguer</a>
                 </div>
+                
                 <div class="copyright">
-                    desenvolvido por Douglas Borges <span class="copyright__year">2025</span>&copy;
+                    desenvolvido por Douglas Borges &copy; 2025<span class="copyright__year"></span>
                 </div>
             </div>
         </footer>
     </div>
-    <aside class="cart">
+    
+    <aside id="cart" class="cart">
         <div class="cart__area">
-            <div class="cart__closer"><span class="cart__closer__x">X</span></div>
+            <div class="cart__closer"><span id="cart-closer" class="cart__closer__x">X</span></div>
             <h2>Seu Pedido</h2>
-            <div class="cart__products"></div>
+            <div id="cart-products" class="cart__products"></div>
+            
             <div class="cart__summary">
-                <div class="cart__summary__item">
+                <!-- <div class="cart__summary__item">
                     <strong>Subtotal</strong>
-                    <span class="cart__summary__subtotal">R$ 0,00</span>
+                    <span id="cart-subtotal">R$ 0,00</span>
                 </div>
+                
                 <div class="cart__summary__item">
                     <strong>Entrega padrão</strong>
-                    <span class="cart__summary__delivery">R$ 0,00</span>
-                </div>
+                    <span id="cart-delivery">R$ 0,00</span>
+                </div> -->
+                
                 <div class="cart__summary__item cart__summary__item--big">
                     <strong>Total</strong>
-                    <span class="cart__summary__total">R$ 0,00</span>
+                    <span id="cart-total">R$ 0,00</span>
                 </div>
+                
                 <div class="cart__summary__checkout">Finalizar pedido</div>
             </div>
         </div>
     </aside>
-    <div class="item__window">
-        <div class="item__window__popup">
-            <div class="item__popup__closer">X</div>
-            <div class="item__popup__photo">
-                <img class="item__popup__photo__img" src="" alt=""  />
-            </div>
-            <div class="item__window__popup--warning">Promoção</div>
-            <div class="item__popup__info">
-                <h1 class="item__popup__title">--</h1>
-                <div class="item__popup__description">--</div>
-                <div class="item__popup__pricearea">
-                    <div class="item__popup__pricearea__title">Preço</div>
-                    <div class="item__popup__pricediv">
-                        <div class="item__popup__price">R$ --</div>
-                        <div class="item__popup__qtydiv">
-                            <button class="item__popup__qtyless">-</button>
-                            <div class="item__popup__qty">1</div>
-                            <button class="item__popup__qtyplus">+</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="item__popup__buttons">
-                    <div class="item__popup__addcart">Adicionar ao carrinho</div>
-                    <div class="item__popup__desktopcancel">Cancelar</div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="item-modal" class="item__window"></div>
     <script type="text/javascript" src="./assets/js/productsList.js"></script>
     <script type="text/javascript" src="./assets/js/script.js"></script>
 </body>
